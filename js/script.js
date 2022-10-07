@@ -41,14 +41,14 @@ submitBtn.addEventListener("click", function () {
         discountPercentage = 20;
         offertForUser = "sconto giovani"
     } else if (eta == "maggiorenne") {
-        // discountPercentage = 40;
+        discountPercentage = 40;
         offertForUser = "Standard"
     }
     userOfferts.innerHTML = offertForUser;
     // CARROZZA
     userCarriage.innerHTML = Math.floor(Math.random() * 10) + 1;
-    console.log(userCarriage);
+
     //codice CP
     userCp.innerHTML = parseInt(Math.random() * (999999 - 00001) + 00001);
-
+    console.log(userCarriage, userCp);
 })
